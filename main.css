@@ -16,21 +16,32 @@
     font-weight: 600;
     src: local('Segoe UI Semibold'), local('SegoeUI-Semibold');
   }
+/*MEDIA*/
+@media (hover: hover) {
+    a:hover, a:active{
+      border: solid;
+      border-color: rgba(75,202,255);
+      color: rgba(75,202,255);
+    }
+}
 /*General*/
 body{
 font-family: sans-serif;
 }
 h2{
    margin-bottom: 0;
+   font-size: 1.875rem;
+   font-family: 'Myname';
+   font-weight: 300;
 }
 .nav-link{
   font-family: 'Myname';
   font-weight: bold;
 }
-.container{width: 1170px;
+.container{max-width: 1170px;
 font-family: 'Myname'; }
 /*nav*/
-.navbar{height: 150px;}
+
 .header{
 background-image: url("image/Blueasy-freebie-1");
 height: 800px;
@@ -38,12 +49,24 @@ height: 800px;
 .nav-color{
   background-color: rgba(53,63,70,.85);
 }
+.navbar{
+  max-height: 150px;
+}
+.nav-link{
+  color: white;
+  font-size: 14px;
+}
+.nav-logo{
+  color: white;
+  font-size: 30px;
+}
 h1{
+  font-size:2.625rem;
   margin-top: 250px;
 }
 h1 p{
   background-color: rgba(73,84,91,.85);
-  color: rgbs(255,255,255,1);
+  color: rgba(255,255,255,1);
   font-family: 'Myname';
   display: table;
 }
@@ -74,14 +97,41 @@ h1 p{
   width: 48px;
   height: 48px;
 }
+.card-text{
+  font-weight: 600;
+  font-size: 12px;
+}
 /*PORTFOLIO*/
 .portfolio-link{
   color: rgba(53,63,70,.85);
+}
+.photo:hover .overlay{
+  background-color: rgba(53,63,70,.85)!important;
+  opacity: 0.7;
+  }
+  .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 270px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgba(81,95,103,1);
+}
+.plus{
+  font-size: 40px;
 }
 /*JUST SECTON*/
 .just-section{
   background-color: rgba(81,95,103,1);
   color: white;
+}
+.video{
+  width: 560px;
+  height: 313px;
 }
 /*TWITTER*/
 .twitter{
@@ -90,4 +140,24 @@ h1 p{
 }
 .fab{
   color: white;
+}
+/*JOHN DOE*/
+.john-doe{
+  background: url("image/john-doe-compressor.jpg");
+  color: white;
+}
+/*TESTIMONIALS*/
+.testomonials{
+  color: rgba(53,63,70,.85);
+}
+.p-testomonials{
+  font-size: 28px;
+}
+/*CONTACT*/
+.contact{
+  background: url("image/contact-compressor.jpg");
+  color: white;
+}
+.background-transparent {
+  background-color: transparent!important;
 }
